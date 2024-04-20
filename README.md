@@ -9,5 +9,14 @@ app_file: app.py
 pinned: false
 license: mit
 ---
+# SWE-FAQ-bot
+MongoDB Hackathon project on 20th April 2024.
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+## Hugging Face
+configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
+## Technical stack
+- MongoDB Altas Vesto Search
+- Fireworks AI:
+  - LLM model: Llma 3 70 B  
+- LlmaIndex
