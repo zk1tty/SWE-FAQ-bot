@@ -16,7 +16,10 @@ MongoDB Hackathon project on 20th April 2024.
 configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
 
 ## Technical stack
-- MongoDB Altas Vesto Search
-- Fireworks AI:
-  - LLM model: Llma 3 70 B  
-- LlmaIndex
+
+|AI Stack component| Model|
+| ------ | ---  | 
+|Language| Python |
+|Model Provider| Llama 3 70B Instruct from Firework.AI|
+|LLM orchestrator| LlmaIndex|
+|Operational and vector database| MongoDB Atlas|
