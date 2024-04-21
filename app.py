@@ -10,8 +10,8 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.vectorstores import DocArrayInMemorySearch
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-st.set_page_config(page_title="SWE-Agent", page_icon="")
-st.title("MongoDB Hackathon: SWE-agent recommendation")
+st.set_page_config(page_title="MONGODB Atlas: SWE Coding Agent FAQ", page_icon="")
+st.title("MONGODB Atlas: SWE Coding Agent FAQ")
 
 
 @st.cache_resource(ttl="1h")
@@ -85,7 +85,7 @@ memory = ConversationBufferMemory(memory_key="chat_history", return_messages=Tru
 
 # Setup LLM and QA chain
 llm = ChatOpenAI(
-    model_name="gpt-3.5-turbo", openai_api_key=openai_api_key, temperature=0, streaming=True
+    model_name="gpt-4-turbo", openai_api_key=openai_api_key, temperature=0, streaming=True
 )
 qa_chain = ConversationalRetrievalChain.from_llm(
     llm, retriever=retriever, memory=memory, verbose=True
@@ -97,7 +97,7 @@ if "messages" not in st.session_state or st.sidebar.button("Clear message histor
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
 
-user_query = st.chat_input(placeholder="Ask me anything!")
+user_query = st.chat_input(placeholder="Ask me anything about code agents!")
 
 if user_query:
     st.session_state.messages.append({"role": "user", "content": user_query})

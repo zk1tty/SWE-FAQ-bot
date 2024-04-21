@@ -13,7 +13,7 @@ license: mit
 MongoDB Hackathon project on 20th April 2024.
 
 ## Hugging Face
-configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+https://huggingface.co/spaces/LLMLocal-Org/MONGO_HACKATHON
 
 ## Technical stack
 
